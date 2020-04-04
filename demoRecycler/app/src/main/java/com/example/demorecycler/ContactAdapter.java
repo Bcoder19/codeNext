@@ -26,6 +26,7 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
         super(myContext,0,myContacts);
         this.myContext = myContext;
         this.myContacts = myContacts;
+
     }
 
     @NonNull
@@ -35,6 +36,7 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
         if(myContacts == null){
             //Inflater displays to screen
             convertView = LayoutInflater.from(myContext).inflate(R.layout.contact_items,parent,false);
+
         }
 
         Contact currentContact = myContacts.get(position);
